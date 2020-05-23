@@ -8,18 +8,19 @@ This proyect is hosted by github pages at <a href="https://pabloqb2000.github.io
 ## Tuneable parameters
 In the setup function all the paremeters are set so they can be easily changed from there. This paremeters are:
 ```
-nCells = 16; // should be even
-cellSize = height/20;
-p1Color = color(227, 103, 86); // colors in RGB colors
-p2Color = color(86, 210, 227);
-startLen = 4;
-record = startLen;
-foodChance = 0.08;
-superFoodChance = 0.005;
-superFoodPower = 5;
-foodColor = color(105, 227, 86);
-superFoodColor = color(227, 226, 86);
-frameRate(6);
+  introFade = 45;
+	nCells = 16; // should be even
+	cellSize = height/20;
+	p1Color = color(227, 103, 86);
+	p2Color = color(86, 210, 227);
+	startLen = 4;
+	record = startLen;
+	foodChance = 0.08;
+	superFoodChance = 0.005;
+	superFoodPower = 5;
+	foodColor = color(105, 227, 86);
+	superFoodColor = color(227, 226, 86);
+	fps = 6;
 ```
 ## Screenshot
 <img src="imgs/screenshot01.png"></img>
