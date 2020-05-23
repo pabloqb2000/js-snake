@@ -1,7 +1,7 @@
 # js-snake
 Little implementation of the game of snake for 1 of 2 players I built using <a href="https://p5js.org/">p5.js</a>.
 ## URL
-This proyect is hosted by github pages at <a href="https://pabloqb2000.github.io/js-recursive_tree_drawing/">this link</a>.
+This proyect is hosted by github pages at <a href="https://pabloqb2000.github.io/js-snake/">this link</a>.
 ## Modes
   - One player: control your player with W,A,S,D keys
   - Two players: control one player with W,A,S,D and the other with I,J,K,L
