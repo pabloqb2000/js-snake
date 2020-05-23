@@ -72,6 +72,9 @@ function drawStartMenu() {
 	strokeWeight(8);
 	point(-cellSize/3, -height/2 + 4*cellSize + 20 - cellSize/3);
 	point(cellSize/3, -height/2 + 4*cellSize + 20 - cellSize/3);
+	// Record
+	textSize(cellSize);
+	text("Record: " + record.toString(), 0, height/2 - 3*cellSize);
 
 	// One player option
 	noStroke();
