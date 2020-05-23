@@ -5,6 +5,7 @@ let foodChance, superFoodChance, superFoodPower;
 let foodColor, superFoodColor;
 let p1Color, p2Color;
 let startLen, record;
+let totalTime = 0;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight);
@@ -16,14 +17,14 @@ function setup() {
 	cellSize = height/20;
 	p1Color = color(227, 103, 86);
 	p2Color = color(86, 210, 227);
-	startLen = 12;
+	startLen = 4;
 	record = startLen;
-	foodChance = 0.1;
-	superFoodChance = 0.01;
+	foodChance = 0.08;
+	superFoodChance = 0.005;
 	superFoodPower = 5;
 	foodColor = color(105, 227, 86);
 	superFoodColor = color(227, 226, 86);
-	frameRate(1);
+	frameRate(6);
 }
 
 function draw() {
@@ -64,6 +65,11 @@ function gameLoop() {
 	spawnFood();
 	drawFood();
 
+	// Update record
+	let biggest = nPlayers == 2 && players[1].getPoints() > players[0].getPoints() ?
+	 			players[1].getPoints() : players[0].getPoints();
+	record = biggest > record ? biggest : record; 
+
 	// Draw points
 	textSize(cellSize);
 	fill(p1Color);
@@ -74,7 +80,14 @@ function gameLoop() {
 	text("Record", nCells/2 * cellSize + cellSize, -cellSize/2 - 5);
 	text(record, nCells/2 * cellSize + cellSize, cellSize/2 + 5);
 
+	totalTime += deltaTime / 1000;
+	textAlign(CENTER);
+	text(("0" + floor(totalTime / 60).toString()).slice(-2) + ":" +
+			("0" + (floor(totalTime) % 60).toString()).slice(-2),
+			0, -nCells/2 * cellSize - 10)
+
 	if(nPlayers == 2) {
+		textAlign(LEFT);
 		fill(p2Color);
 		text("Player2", nCells/2 * cellSize + cellSize, nCells/2 * cellSize - cellSize - 10);
 		text(players[1].getPoints(), nCells/2 * cellSize + cellSize, nCells/2 * cellSize);

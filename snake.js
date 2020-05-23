@@ -62,9 +62,20 @@ class Snake {
         for(let i = this.cells.length - 2; i >= 0; i--){
             if(this.cells[i].x == nh.x && this.cells[i].y == nh.y){
                 this.cells.splice(0,i+1);
+                break;
             }
         }
-        
+            // Eat other snake
+        if(nPlayers == 2) {
+            let otherCells = players[this.n == 0 ? 1 : 0].cells;
+            for(let i = otherCells.length - 2; i >= 0; i--){
+                if(otherCells[i].x == nh.x && otherCells[i].y == nh.y){
+                    otherCells.splice(0,i+1);
+                    this.growing += floor(i+1/2);
+                    break;
+                }
+            }
+        }
 
         this.changed = false;
     }
