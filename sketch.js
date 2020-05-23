@@ -17,14 +17,14 @@ function setup() {
 	cellSize = height/20;
 	p1Color = color(227, 103, 86);
 	p2Color = color(86, 210, 227);
-	startLen = 4;
+	startLen = 9;
 	record = startLen;
 	foodChance = 0.08;
 	superFoodChance = 0.005;
 	superFoodPower = 5;
 	foodColor = color(105, 227, 86);
 	superFoodColor = color(227, 226, 86);
-	frameRate(6);
+	frameRate(1);
 }
 
 function draw() {
