@@ -8,11 +8,11 @@ let startLen, record;
 let totalTime = 0;
 
 function setup() {
+	nPlayers = 0;
 	createCanvas(windowWidth, windowHeight);
 	background(32);
 
 	// Parameters
-	nPlayers = 0;
 	nCells = 16; // should be even
 	cellSize = height/20;
 	p1Color = color(227, 103, 86);
