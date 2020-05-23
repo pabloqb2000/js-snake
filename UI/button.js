@@ -25,7 +25,7 @@ class Button extends UiElement{
     draw() {
         // Draw the rectangle
         noStroke();
-        fill(this.highlighted ? 200 : 230);
+        fill(this.highlighted ? 230 : 200);
         rect(this.x, this.y, this.width, this.height, this.height/9);
 
         // Draw the text
