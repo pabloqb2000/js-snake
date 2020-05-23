@@ -1,27 +1,26 @@
-# js-ui_on_canvas_example
-Here I include an example on how to use the super simple UI I built using <a href="https://p5js.org/">p5.js</a>. I also use this as default proyect.
+# js-snake
+Little implementation of the game of snake for 1 of 2 players I built using <a href="https://p5js.org/">p5.js</a>.
 ## URL
-This is a template proyect so I don't have it hosted by github pages, but you can checkout this other proyect at <a href="https://pabloqb2000.github.io/js-recursive_tree_drawing/">this link</a>.
-## Contents of the UI
-  - Slider
-  - Button
-  - ToggleButton
-  - Color picker  
-## Description of the elements
-#### All elements
-All elements are highlightable and hideable <br/>
-The UI can auto distribute the elements in a table form
-#### Slider
-Normal slider for choosing a value between to given numbers
-It can show a label, show the actual value and have a discrete step size
-#### Button
-Performs a given action when clicked
-#### ToggleButton
-Button wich can be activated / deactivated
-Performs an action when clicked as well
-#### ColorPicker
-Three sliders to choose a color which is shown next to the sliders
-Color is chosen by HSL
+This proyect is hosted by github pages at <a href="https://pabloqb2000.github.io/js-recursive_tree_drawing/">this link</a>.
+## Modes
+  - One player: control your player with W,A,S,D keys
+  - Two players: control one player with W,A,S,D and the other with I,J,K,L
+## Tuneable parameters
+In the setup function all the paremeters are set so they can be easily changed from there. This paremeters are:
+```
+nCells = 16; // should be even
+cellSize = height/20;
+p1Color = color(227, 103, 86); // colors in RGB colors
+p2Color = color(86, 210, 227);
+startLen = 4;
+record = startLen;
+foodChance = 0.08;
+superFoodChance = 0.005;
+superFoodPower = 5;
+foodColor = color(105, 227, 86);
+superFoodColor = color(227, 226, 86);
+frameRate(6);
+```
 ## Screenshot
 <img src="imgs/screenshot01.png"></img>
 ## References
