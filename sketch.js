@@ -17,7 +17,7 @@ function setup() {
 	cellSize = height/20;
 	p1Color = color(227, 103, 86);
 	p2Color = color(86, 210, 227);
-	startLen = 9;
+	startLen = 4;
 	record = startLen;
 	foodChance = 0.08;
 	superFoodChance = 0.005;
