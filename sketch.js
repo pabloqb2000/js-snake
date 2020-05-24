@@ -150,7 +150,7 @@ function drawStartMenu() {
 
 	// Make intro animation
 	if(intro < introFade) {
-		background(32, 255*(1 - intro/introFade));
+		background(32, 255*(1 - intro/introFade)**3);
 		intro++;
 	}
 }
