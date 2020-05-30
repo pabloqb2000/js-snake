@@ -262,10 +262,6 @@ function goToMenu() {
 	intro = 0;
 }
 
-function mousePressed() {
-	UI.mouseClicked();
-}
-
 function keyPressed() {
 	switch(keyCode){
 		case 87: // W
