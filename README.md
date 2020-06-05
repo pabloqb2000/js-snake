@@ -27,3 +27,6 @@ In the setup function all the paremeters are set so they can be easily changed f
 ## References
 To find more information about the <b>awesome</b> library used for this proyect visit:
 <a href="https://p5js.org/"> https://p5js.org/ </a>
+
+## Other proyects
+Checkout my other proyects at <a href="https://pabloqb2000.github.io/Math_visualization/">Click math</a>
