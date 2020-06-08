@@ -10,6 +10,7 @@ let introFade, intro = 0;
 let menuBtn;
 
 function setup() {
+	textFont("Sarpanch");
 	createCanvas(windowWidth, windowHeight);
 	background(32);
 
